@@ -1,19 +1,42 @@
-Gunakan linux untuk menjalankan/wsl pada windows karena @tensorflow/tfjs-node akan error jika dijalankan langsung di terminal windows
+# Deras Backend
 
-1. Install node.js via nvm jika belum diinstall
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-   nvm install 18
-   nvm use 18
+================
 
-setelah NVM berhasil terinstal, restart terminal baru install npmnya
+## Prerequisites
 
-2. clone repository
-   git clone https://github.com/alvianori/Deras-backend.git
+---
 
-3. masuk ke project yang ada package.json nya, lalu ketik diterminal
-   npm i
+- **Linux or WSL**: This project requires a Linux environment to run, as `@tensorflow/tfjs-node` may encounter errors when run directly in a Windows terminal.
+- **Node.js**: Install Node.js using NVM (Node Version Manager) if you haven't already. Run the following commands:
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  nvm install 18
+  nvm use 18
 
-4. setelah dependensi terinstal, jalankan aplikasi dengan perintah
-   npm run start
+Restart your terminal after installing NVM.
 
-untuk prediksi gunakan method POST http://localhost:3000/predict dengan body form-data berisi image
+## Getting Started
+
+---
+
+### Clone the Repository
+
+Clone this repository using the following command:
+git clone https://github.com/alvianori/Deras-backend.git
+
+### Install Dependencies
+
+Install the required dependencies by running the following command in the project directory:
+
+npm i
+
+### Start the Application
+
+Start the application by running the following command:
+
+npm run start
+
+## Prediction API
+
+---
+
+To make predictions, send a **POST** request to `http://localhost:3000/predict` with a **form-data** body containing the image.
