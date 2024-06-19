@@ -16,42 +16,42 @@ async function predictClassification(model, image) {
   let explanation, suggestion;
 
   if (label === "Urticaria Hives") {
-    explanation = "Gejala utamanya adalah bercak merah atau bengkak pada kulit yang gatal. Biasanya disebabkan oleh reaksi alergi terhadap makanan, obat-obatan, atau faktor lingkungan.";
-    suggestion = "Hindari pemicu yang diketahui, seperti makanan tertentu atau paparan dingin.";
+    explanation = "The main symptoms are red or swollen patches on the skin that itch. It is usually caused by an allergic reaction to food, medications, or environmental factors.";
+    suggestion = "Avoid known triggers, such as certain foods or cold exposure.";
   }
 
   if (label === "Photodermatitis") {
-    explanation = "Dikenal sebagai dermatitis fototoksik atau fotodermatitis, adalah reaksi kulit yang disebabkan oleh paparan sinar matahari setelah penggunaan produk tertentu.";
-    suggestion = "Gunakan tabir surya dengan SPF tinggi dan hindari paparan langsung ke sinar matahari.";
+    explanation = "Also known as phototoxic dermatitis, it is a skin reaction caused by sun exposure after using certain products.";
+    suggestion = "Use a high SPF sunscreen and avoid direct sun exposure.";
   }
   if (label === "Dyshidrotic Dermatitis") {
-    explanation = "Gangguan kulit yang ditandai oleh munculnya gelembung kecil yang gatal, biasanya terjadi di telapak tangan dan kaki.";
-    suggestion = "Hindari faktor pencetus seperti stres atau iritasi kimia, gunakan krim pelembap untuk menjaga kelembapan kulit.";
+    explanation = "A skin condition characterized by the appearance of small, itchy blisters, usually on the palms of the hands and soles of the feet.";
+    suggestion = "Avoid triggers such as stress or chemical irritation, and use moisturizing creams to keep the skin hydrated.";
   }
 
   if (label === "Atopic Dermatitis") {
-    explanation = "Kondisi kronis yang menyebabkan kulit menjadi meradang, kering, dan gatal.";
-    suggestion = "Gunakan krim pelembap khusus untuk mengurangi kekeringan, hindari pemicu seperti deterjen keras atau stres";
+    explanation = "A chronic condition that causes the skin to become inflamed, dry, and itchy, often due to a combination of genetic and environmental factors.";
+    suggestion = "Use gentle, fragrance-free cleansers and moisturizers, and avoid triggers such as harsh soaps or stress.";
   }
   if (label === "Seborrheic") {
-    explanation = "Terjadi ketika kulit menjadi meradang, biasanya pada area berminyak seperti kulit kepala atau wajah.";
-    suggestion = "Gunakan sampo khusus untuk mengendalikan produksi minyak, hindari stress, dan jaga kebersihan kulit.";
+    explanation = "It occurs when the skin becomes inflamed, usually in oily areas such as the scalp or face.";
+    suggestion = "Use specialized shampoos to control oil production, avoid stress, and maintain good skin hygiene.";
   }
   if (label === "Neurodermatitis") {
-    explanation = "Kondisi di mana rasa gatal menimbulkan garukan berlebihan, menyebabkan kulit menebal dan memerah.";
-    suggestion = "Gunakan teknik relaksasi untuk mengurangi garukan, dan hindari bahan pemicu seperti wol atau deterjen yang keras.";
+    explanation = "A condition in which excessive scratching leads to thickening and reddening of the skin.";
+    suggestion = "Use relaxation techniques to reduce scratching, and avoid triggers such as wool or harsh detergents.";
   }
   if (label === "Angioedema") {
-    explanation = "Pembengkakan jaringan di bawah kulit, biasanya pada area mata dan bibir, seringkali akibat reaksi alergi.";
-    suggestion = "Hindari alergen yang diketahui, konsultasikan dengan dokter untuk pengobatan yang sesuai.";
+    explanation = "Swelling of the tissue beneath the skin, usually around the eyes and lips, often due to an allergic reaction.";
+    suggestion = "Avoid known allergens, and consult a doctor for appropriate treatment.";
   }
   if (label === "Allergic Contact Dermatitis") {
-    explanation = "Reaksi alergi kulit yang terjadi setelah kontak langsung dengan alergen tertentu seperti logam atau bahan kimia.";
-    suggestion = "Identifikasi dan hindari kontak dengan bahan pemicu, gunakan krim anti-gatal jika diperlukan.";
+    explanation = "An allergic skin reaction that occurs after direct contact with certain allergens such as metals or chemicals.";
+    suggestion = "Identify and avoid contact with trigger substances, and use anti-itch creams if necessary.";
   }
   if (label === "Eczema") {
-    explanation = "Kondisi kronis yang menyebabkan kulit menjadi meradang, kering, dan gatal.";
-    suggestion = "Gunakan krim pelembap khusus untuk mengurangi kekeringan, hindari pemicu seperti deterjen keras atau stres";
+    explanation = "A general term for a group of skin conditions that cause inflammation, dryness, and itchiness, often accompanied by a family history of allergies.";
+    suggestion = "Keep the skin moisturized with gentle, non-comedogenic products, and avoid irritants such as harsh soaps or fragrances.";
   }
 
   return { label, explanation, suggestion };
