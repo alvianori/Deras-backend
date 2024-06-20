@@ -1,0 +1,9 @@
+runtime: nodejs18
+service: default
+
+handlers:
+  - url: /.*
+    script: src/server/server.js
+
+env_variables:
+  MODEL_URL: "https://storage.googleapis.com/dermatitis-assistant-bucket/models/model.json"
